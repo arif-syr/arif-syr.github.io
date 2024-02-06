@@ -11,11 +11,27 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/arif-syr/listing-scraper"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Craigslist listing scraper
+        </a>
+        <a
+          className="App-link"
+          href="https://github.com/arif-syr/mindset"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Mindset
+        </a>
+        <a
+          className="App-link"
+          href="https://github.com/arif-syr/resume_repository/blob/master/Arif-Syraj-resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          My Resume
         </a>
       </header>
     </div>
