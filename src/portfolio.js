@@ -23,7 +23,7 @@ const greeting = {
   username: "Arif Syraj",
   title: "Hello, I'm Arif",
   subTitle: emoji(
-    "A driven Software Engineer with expertise in software applications, cloud solutions, and AI-driven tools. Proficient in Python, Java, and M/LLMs, with experience designing LiDAR-based algorithms, fine-tuning LLMs, and deploying scalable cloud solutions on AWS. Passionate about solving complex problems and leveraging modern technologies to create impactful solutions."
+    "A driven Software Engineer with expertise in software applications, cloud solutions, and AI-driven tools. Proficient in Python, Java, and MLLMs/LLMs, with experience designing LiDAR-based algorithms, fine-tuning LLMs, and deploying scalable cloud solutions on AWS. Passionate about solving complex problems and leveraging modern technologies to create impactful solutions."
   ),
   resumeLink:
     "https://github.com/arif-syr/resume_repository/blob/master/Arif-Syraj-resume.pdf", // Set to empty to hide the button
@@ -93,7 +93,7 @@ skillCategories: [
   {
     category: "Frameworks/Tools",
     skills: [
-      { skillName: "Linux", fontAwesomeClassname: "fab fa-linux" },
+      { skillName: "Linux Development", fontAwesomeClassname: "fab fa-linux" },
       { skillName: "AWS", fontAwesomeClassname: "fab fa-aws" },
       { skillName: "GCP", fontAwesomeClassname: "fas fa-cloud" },
       { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
@@ -116,7 +116,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "University of San Francisco",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/USFLogo.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "August 2023 - December 2025",
       desc: "Participated in the research of XXX and published 3 papers.",
@@ -127,7 +127,7 @@ const educationInfo = {
     },
     {
       schoolName: "University of Illinois at Urbana-Champaign",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("./assets/images/University_of_Illinois_seal.png"),
       subHeader: "Bachelor of Science in Mechanical Engineering",
       duration: "August 2016 - May 2021",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",

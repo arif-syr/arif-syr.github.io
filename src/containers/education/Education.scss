@@ -23,6 +23,13 @@
   padding-top: 20px;
 }
 
+.education-roundedimg {
+  width: 120px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* If you want the image to stay rounded */
+  margin-bottom: 20px; /* Optional spacing below the logo */
+}
+
 @media (max-width: 1380px) {
   .education-card-container {
     padding-top: 0px;
@@ -33,6 +40,9 @@
   .education-text-subtitle {
     font-size: 18px;
     text-align: center;
+  }
+  .education-roundedimg {
+    width: 100px; /* Adjust size for smaller screens */
   }
 }
 
