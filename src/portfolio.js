@@ -66,6 +66,18 @@ softwareSkills: [
       fontAwesomeClassname: "fab fa-python"
     },
     {
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "C",
+      fontAwesomeClassname: "devicon-c-plain"
+    },
+    {
+      skillName: "C++",
+      fontAwesomeClassname: "devicon-cplusplus-plain"
+    },
+    {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
     },
@@ -74,12 +86,12 @@ softwareSkills: [
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "java",
-      fontAwesomeClassname: "fab fa-java"
-    },
-    {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "SQL",
+      fontAwesomeClassname: "fab fa-java"
     },
     {
       skillName: "reactjs",
