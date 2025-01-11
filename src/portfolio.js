@@ -23,7 +23,7 @@ const greeting = {
   username: "Arif Syraj",
   title: "Hello, I'm Arif",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A driven Software Engineer with expertise in software applications, cloud solutions, and AI-driven tools. Proficient in Python, Java, and M/LLMs, with experience designing LiDAR-based algorithms, fine-tuning LLMs, and deploying scalable cloud solutions on AWS. Passionate about solving complex problems and leveraging modern technologies to create impactful solutions."
   ),
   resumeLink:
     "https://github.com/arif-syr/resume_repository/blob/master/Arif-Syraj-resume.pdf", // Set to empty to hide the button
@@ -45,8 +45,8 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "lorem ipsum",
+  title: "Skills",
+  // subTitle: "lorem ipsum",
   skills: [
     // emoji(
     //   "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -139,7 +139,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
