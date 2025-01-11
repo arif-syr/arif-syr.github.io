@@ -15,6 +15,14 @@
   margin-bottom: 20px;
 }
 
+.software-skill-inline img {
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  // object-fit: contain; /* Ensures the logo doesn't get distorted */
+  // margin-bottom: 10px; /* Space between image and skill name */
+  display: block; /* Ensures consistent layout with icons */
+}
+
 .software-skill-inline > i {
   color: $subTitle;
 }

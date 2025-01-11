@@ -12,9 +12,13 @@ export default function SoftwareSkill() {
             <ul className="dev-icons">
               {category.skills.map((skill, j) => (
                 <li key={j} className="software-skill-inline" name={skill.skillName}>
+                {skill.customIconPath ? (
+                  <img src={skill.customIconPath} alt={skill.skillName} />
+                ) : (
                   <i className={skill.fontAwesomeClassname}></i>
-                  <p>{skill.skillName}</p>
-                </li>
+                )}
+                <p>{skill.skillName}</p>
+              </li>
               ))}
             </ul>
           </div>
