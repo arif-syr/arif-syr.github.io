@@ -60,72 +60,54 @@ const skillsSection = {
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
-softwareSkills: [
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "java",
-      fontAwesomeClassname: "fab fa-java"
-    },
-    {
-      skillName: "C",
-      fontAwesomeClassname: "devicon-c-plain"
-    },
-    {
-      skillName: "C++",
-      fontAwesomeClassname: "devicon-cplusplus-plain"
-    },
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "SQL",
-      fontAwesomeClassname: "fab fa-java"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    // {
-    //   skillName: "swift",
-    //   fontAwesomeClassname: "fab fa-swift"
-    // },
-    // {
-    //   skillName: "npm",
-    //   fontAwesomeClassname: "fab fa-npm"
-    // },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    // {
-    //   skillName: "firebase",
-    //   fontAwesomeClassname: "fas fa-fire"
-    // },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
-  ],
+skillCategories: [
+  {
+    category: "Programming Languages",
+    skills: [
+      { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+      { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
+      { skillName: "C", fontAwesomeClassname: "devicon-c-plain" },
+      { skillName: "C++", fontAwesomeClassname: "devicon-cplusplus-plain" },
+      { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
+      { skillName: "HTML5", fontAwesomeClassname: "fab fa-html5" },
+      { skillName: "CSS3", fontAwesomeClassname: "fab fa-css3-alt" },
+      { skillName: "SQL", fontAwesomeClassname: "fas fa-database" },
+    ],
+  },
+  {
+    category: "General",
+    skills: [
+      { skillName: "Finetuning", fontAwesomeClassname: "fas fa-cogs" },
+      { skillName: "Prompt Engineering", fontAwesomeClassname: "fas fa-lightbulb" },
+      { skillName: "Agile", fontAwesomeClassname: "fas fa-tasks" },
+      { skillName: "Data Scraping", fontAwesomeClassname: "fas fa-download" },
+      { skillName: "Shell Scripting", fontAwesomeClassname: "fas fa-terminal" },
+      { skillName: "Containerization", fontAwesomeClassname: "fab fa-docker" },
+      { skillName: "Multithreading", fontAwesomeClassname: "fas fa-project-diagram" },
+      { skillName: "CI/CD", fontAwesomeClassname: "fas fa-sync-alt" },
+      { skillName: "Automated Testing", fontAwesomeClassname: "fas fa-vial" },
+      { skillName: "Cloud Deployment", fontAwesomeClassname: "fas fa-cloud" },
+      { skillName: "Network Protocols", fontAwesomeClassname: "fas fa-network-wired" },
+    ],
+  },
+  {
+    category: "Frameworks/Tools",
+    skills: [
+      { skillName: "Linux", fontAwesomeClassname: "fab fa-linux" },
+      { skillName: "AWS", fontAwesomeClassname: "fab fa-aws" },
+      { skillName: "GCP", fontAwesomeClassname: "fas fa-cloud" },
+      { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
+      { skillName: "ROS", fontAwesomeClassname: "fas fa-robot" },
+      { skillName: "PyTorch", fontAwesomeClassname: "fas fa-brain" },
+      { skillName: "TensorFlow", fontAwesomeClassname: "fas fa-brain" },
+      { skillName: "MongoDB", fontAwesomeClassname: "fas fa-database" },
+      { skillName: "React", fontAwesomeClassname: "fab fa-react" },
+      { skillName: "Node.js", fontAwesomeClassname: "fab fa-node" },
+      { skillName: "Express", fontAwesomeClassname: "fas fa-server" },
+      { skillName: "JUnit", fontAwesomeClassname: "fas fa-vial" },
+    ],
+  },
+],
   display: true // Set false to hide this section, defaults to true
 };
 
