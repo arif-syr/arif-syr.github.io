@@ -103,6 +103,14 @@
   transition: all 0.3s ease;
 }
 
+.collapsible-header h5 {
+  margin: 0; /* Fixes alignment issues caused by default margins */
+  line-height: normal; /* Avoids excessive spacing */
+  display: flex; /* Enables flexbox alignment */
+  align-items: center; /* Vertically centers text */
+  height: 100%; /* Matches the header height */
+}
+
 .collapsible-header:hover {
   background-color: $lightBackground3;
 }
