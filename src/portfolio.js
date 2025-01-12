@@ -216,6 +216,14 @@ const bigProjects = {
       ]
     },
     {
+      // image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName: "",
+      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      footerLink: [
+        //  you can add extra buttons here.
+      ]
+    },
+    {
       // image: require("./assets/images/nextuLogo.webp"),
       projectName: "",
       projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",

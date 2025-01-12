@@ -6,7 +6,9 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
   const {isDark} = useContext(StyleContext);
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openStates, setOpenStates] = useState(
+    Array(bigProjects.projects.length).fill(false)
+  );
 
   function openUrlInNewTab(url) {
     if (!url) {
@@ -17,7 +19,11 @@ export default function StartupProject() {
   }
 
   const toggleCollapse = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
+    setOpenStates((prevStates) => {
+      const updatedStates = [...prevStates];
+      updatedStates[index] = !updatedStates[index];
+      return updatedStates;
+    });
   };
 
   if (!bigProjects.display) {
@@ -57,12 +63,12 @@ export default function StartupProject() {
                     {project.projectName || `Project ${index + 1}`}
                   </h5>
                   <span className="collapsible-icon">
-                    {openIndex === index ? "-" : "+"}
+                    {openStates[index] ? "-" : "+"}
                   </span>
                 </div>
 
                 {/* Collapsible Content */}
-                {openIndex === index && (
+                {openStates[index] && (
                   <div
                     className={
                       isDark
