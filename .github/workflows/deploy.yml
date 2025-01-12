@@ -1,41 +1,48 @@
-name: Build and Deploy
+name: Build and Deploy to gh-pages
+
+on:
+  push:
+    branches:
+      - port # Change to the branch you want to trigger the workflow
+  pull_request:
+    branches:
+      - port # Adjust based on your development branch
+  workflow_dispatch: # Allows manual triggering of the workflow
+
 env:
   CI: false
   GITHUB_USERNAME: ${{ github.repository_owner }}
-  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
-  USE_GITHUB_DATA: "true"
-  MEDIUM_USERNAME: "saadpasta" # Change this to your medium username
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - master
-  schedule:
-    - cron: "0 12 * * 1" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3 # If you're using actions/checkout@v3 you must set persist-credentials to false in most cases for the deployment to work correctly.
+      - name: Checkout Repository
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
 
-      - name: Setup Node.js 🔧
+      - name: Setup Node.js
         uses: actions/setup-node@v3.8.1
         with:
-          node-version: 18.x
+          node-version: 18.x # Update if needed
+          cache: 'npm'
+          cache-dependency-path: package-lock.json
 
-      - name: Update npm 🚀
-        run: npm install -g npm@latest
+      - name: Install Dependencies
+        run: npm install
 
-      - name: Install and Build 🔧 # Build the Project
-        run: |
-          npm install
-          npm run build
-      - name: Deploy 🚀
+      - name: Check Format (Optional)
+        run: npm run check-format # Include if you want to enforce formatting checks
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: build # The folder the action should deploy.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages # Change to the deployment branch
+          FOLDER: build # The folder to deploy
