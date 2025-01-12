@@ -208,31 +208,98 @@ const bigProjects = {
   subtitle: "A list of projects I have completed recently",
   projects: [
     {
-      // image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "LLM's To Detect Chart Misinformation",
+      projectDesc: [
+        "Finetuned a multimodal LLM (LLaVA) to detect visual misinformation in bar charts with LoRA and 2.3k examples.",
+        "Created a custom finetuning script and explored parameters to prevent overfitting and minimize GPU loads.",
+        "Resulted in a model that can identify visually manipulated bar charts 90% of the time."
+      ],
+      skills: ["Python", "Hugging Face Transformers", "PyTorch", "LoRA", "AI/ML"],
       footerLink: [
-        //  you can add extra buttons here.
+        { name: "View Details", url: "link_to_project_details_or_demo" }
       ]
     },
     {
-      // image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Highly Available Cloud Application Deployment",
+      projectDesc: [
+        "Architected and deployed a highly available, secure application on AWS using ECR, EC2, ALB, VPC, and ASGs.",
+        "Configured an ALB to distribute traffic across EC2 instances in private subnets across multiple AZ's with launch templates and auto-scaling groups, enhancing scalability, security, and availability.",
+        "Improved operational security by launching bastion hosts across availability zones using ASGs for highly available, secure SSH access to EC2 instances.",
+        "Set up TLS encryption using ACM and Route 53 for domain management and HTTPS-encrypted communication.",
+        "Deployed a containerized application orchestrated with ECS."
+      ],
       footerLink: [
-        //  you can add extra buttons here.
+        { name: "View Details", url: "link_to_project_details_or_demo" }
       ]
     },
     {
-      // image: require("./assets/images/nextuLogo.webp"),
-      projectName: "",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Syllabus Generator",
+      projectDesc: [
+        "Used low-cost LLMs and crewAI to coordinate the automatic generation of a syllabus using basic course info.",
+        "Implemented prompt engineering techniques to optimize syllabus section generation, significantly improving output quality and relevance.",
+        "Developed a microservice using FastAPI that talks to large LLM's like ChatGPT for automated syllabus generation."
+      ],
       footerLink: [
+        { name: "View Details", url: "link_to_project_details_or_demo" }
+      ]
+    },
+    {
+      projectName: "Craigslist Apartment Scraper",
+      projectDesc: [
+        "A Python web-scraping script that enables a user to browse hundreds of ads for rental accommodation on Craigslist in a fraction of the time it would take to do so using the website.",
+        "Scraped results are output to HTML files in a readable manner according to a list of user-specified constraints on commute time, rent, number of bedrooms, location, shared versus whole apartments, and more.",
+        "Allows a user to easily see commute times to a specified location by foot, bike, and car. This data is queried from OpenStreetMap and can be used to sort listings according to travel time buckets by a chosen mode of transport."
+      ],
+      footerLink: [
+        { name: "View Details", url: "link_to_project_details_or_demo" }
+      ]
+    },
+    {
+      projectName: "Mindset",
+      projectDesc: [
+        "A wellness web-app with a task management system to help users track and quit addictions, track nutrition, sleep quality, and focus on work.",
+        "Group project where we used Node.js with Express to set up the server, Passport.js and Google OAuth2 for authentication, and Mongoose to store user data."
+      ],
+      footerLink: [
+        { name: "View Details", url: "link_to_project_details_or_demo" }
+      ]
+    },
+    {
+      projectName: "Reddit Product Scraper",
+      projectDesc: [
+        "Solo project to find specific products being re-sold on Reddit subreddits to get them at a discount.",
+        "Leveraged the Reddit API to scrape thousands of posts per minute to find relevant products and deliver them to the user in a readable fashion.",
+        "Personally saved $150 on $500 worth of purchases."
+      ],
+      footerLink: [
+        { name: "View Details", url: "link_to_project_details_or_demo" }
+      ]
+    },
+    {
+      projectName: "Blackjack Agent",
+      projectDesc: [
+        "Developed an agent to play blackjack against humans using Q-learning as a reinforcement learning algorithm.",
+        "Simulated an environment to teach an agent to optimize decision making by balancing exploration and exploitation.",
+        "Used matplotlib and the learned policy of the agent to visualize agent policy."
+      ],
+      footerLink: [
+        { name: "View Details", url: "link_to_project_details_or_demo" }
+      ]
+    },
+    {
+      projectName: "Fashion Image Classifier",
+      projectDesc: [
+        "Used keras and tensorflow to adapt ViT (Vision Transformer) to classify fashion articles by training on the fashion_mnist dataset.",
+        "Achieved a train accuracy of 86.88% after 4 epochs of training on 4000 images."
+      ],
+      footerLink: [
+        { name: "View Details", url: "link_to_project_details_or_demo" }
       ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
 };
+
 
 // Achievement Section
 // Include certificates, talks etc

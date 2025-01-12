@@ -85,13 +85,37 @@ export default function StartupProject() {
                         />
                       </div>
                     )}
-                    <p
+                    <ul
                       className={
-                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                        isDark
+                          ? "dark-mode project-bullet-list"
+                          : "project-bullet-list"
                       }
                     >
-                      {project.projectDesc}
-                    </p>
+                      {project.projectDesc.map((desc, i) => (
+                        <li key={i}>{desc}</li>
+                      ))}
+                    </ul>
+                    {project.skills && (
+                      <div className="skills-section">
+                        <h6 className={isDark ? "dark-mode skills-title" : "skills-title"}>
+                          Skills Used:
+                        </h6>
+                        <ul
+                          className={
+                            isDark
+                              ? "dark-mode skills-list"
+                              : "skills-list"
+                          }
+                        >
+                          {project.skills.map((skill, i) => (
+                            <li key={i} className="skill-item">
+                              {skill}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                     {project.footerLink && (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => (
