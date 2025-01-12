@@ -1,18 +1,12 @@
-name: Build and Deploy to gh-pages
+name: Build and push to gh-pages branch
 
 on:
   push:
     branches:
-      - port # Change to the branch you want to trigger the workflow
+      - port # Adjust to the correct branch
   pull_request:
     branches:
-      - port # Adjust based on your development branch
-  workflow_dispatch: # Allows manual triggering of the workflow
-
-env:
-  CI: false
-  GITHUB_USERNAME: ${{ github.repository_owner }}
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - port
 
 jobs:
   build-and-deploy:
@@ -21,28 +15,22 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3.8.1
+      - name: Use Node.js 21.x
+        uses: actions/setup-node@v3
         with:
-          node-version: 18.x # Update if needed
+          node-version: 21.x
           cache: 'npm'
           cache-dependency-path: package-lock.json
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
-      # - name: Check Format (Optional)
-      #   run: npm run check-format # Include if you want to enforce formatting checks
-
-      - name: Build Project
-        run: npm run build
-
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
+      - name: Build and Deploy
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          npm run deploy
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # Change to the deployment branch
-          FOLDER: build # The folder to deploy
