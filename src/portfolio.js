@@ -169,8 +169,8 @@ const workExperience = {
       date: "March 2021 – July 2022",
       // desc: "",
       descBullets: [
-        "Designed an algorithm to estimate plant height using noisy LiDAR data collected by our phenotyping robot, cutting error by >50\% across datasets over the previous algorithm and beating accuracy of manual measurements.",
-        "Revamped robot autonomy by designing a crash detection algorithm fusing LiDAR and odometry data collected from various environments, reducing overall false positives and negatives by 75\%.",
+        "Designed an algorithm to estimate plant height using noisy LiDAR data collected by our phenotyping robot, cutting error by >50% across datasets over the previous algorithm and beating accuracy of manual measurements.",
+        "Revamped robot autonomy by designing a crash detection algorithm fusing LiDAR and odometry data collected from various environments, reducing overall false positives and negatives by 75%.",
         "Greatly decreased need for manual waypoint recording by implementing automatic waypoint generation on turns, saving customers several minutes per data collection and improving robot autonomy.",
         "Introduced a culture of documentation in our workflows for libraries and testing methodologies, which I later used to onboard interns for a summer.",
         "Extensively tested robot system functionality, standardized testing methodologies and created utility shell scripts, helping catch several system bugs before deployment to customers."
