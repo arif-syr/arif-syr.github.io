@@ -2,11 +2,9 @@ name: Build and push to gh-pages branch
 
 on:
   push:
-    branches:
-      - port # Adjust to the correct branch
+    branches: [ port ]
   pull_request:
-    branches:
-      - port
+    branches: [ port ]
 
 jobs:
   build-and-deploy:
@@ -28,9 +26,12 @@ jobs:
 
       - name: Build and Deploy
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git config --global user.name $user_name
+          git config --global user.email $user_email
+          git remote set-url origin https://${github_token}@github.com/${repository}
           npm run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
+          repository: ${{ github.repository }}
