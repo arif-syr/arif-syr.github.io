@@ -119,19 +119,19 @@ const educationInfo = {
       logo: require("./assets/images/USFLogo.png"),
       subHeader: "Master of Science in Computer Science",
       duration: "August 2023 - December 2025",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      desc: "Relevant coursework: DS&A, Algorithms, Principles of Software Development, Software Development Lifecycle, Cloud Computing, Foundations of A.I., Bayesian & Deep Learning, Systems Programming, Network Programming",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     },
     {
       schoolName: "University of Illinois at Urbana-Champaign",
       logo: require("./assets/images/University_of_Illinois_seal.png"),
       subHeader: "Bachelor of Science in Mechanical Engineering",
       duration: "August 2016 - May 2021",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      desc: "Relevant coursework: Linear Algebra, Database Systems, Signals Processing, Differential Equations",
+      // descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
