@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.222b2337.css",
-    "main.js": "/static/js/main.15aab7a4.js",
-    "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
-    "static/js/64.1f7b66bc.chunk.js": "/static/js/64.1f7b66bc.chunk.js",
-    "static/css/769.b3cbb36b.chunk.css": "/static/css/769.b3cbb36b.chunk.css",
-    "static/js/769.307069f1.chunk.js": "/static/js/769.307069f1.chunk.js",
+    "main.css": "/static/css/main.72f6aa88.css",
+    "main.js": "/static/js/main.ccd7d6b8.js",
+    "static/css/487.bb36206c.chunk.css": "/static/css/487.bb36206c.chunk.css",
+    "static/js/487.d6c98bec.chunk.js": "/static/js/487.d6c98bec.chunk.js",
+    "static/css/990.c6a7ee28.chunk.css": "/static/css/990.c6a7ee28.chunk.css",
+    "static/js/990.061eed6b.chunk.js": "/static/js/990.061eed6b.chunk.js",
     "static/media/University_of_Illinois_seal.png": "/static/media/University_of_Illinois_seal.09051c1fdd4230d0bc24.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
@@ -18,15 +18,15 @@
     "static/media/mongodb.jpg": "/static/media/mongodb.79a9ef7a0f1a232b4d46.jpg",
     "static/media/skill.svg": "/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/index.html",
-    "main.222b2337.css.map": "/static/css/main.222b2337.css.map",
-    "main.15aab7a4.js.map": "/static/js/main.15aab7a4.js.map",
-    "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
-    "64.1f7b66bc.chunk.js.map": "/static/js/64.1f7b66bc.chunk.js.map",
-    "769.b3cbb36b.chunk.css.map": "/static/css/769.b3cbb36b.chunk.css.map",
-    "769.307069f1.chunk.js.map": "/static/js/769.307069f1.chunk.js.map"
+    "main.72f6aa88.css.map": "/static/css/main.72f6aa88.css.map",
+    "main.ccd7d6b8.js.map": "/static/js/main.ccd7d6b8.js.map",
+    "487.bb36206c.chunk.css.map": "/static/css/487.bb36206c.chunk.css.map",
+    "487.d6c98bec.chunk.js.map": "/static/js/487.d6c98bec.chunk.js.map",
+    "990.c6a7ee28.chunk.css.map": "/static/css/990.c6a7ee28.chunk.css.map",
+    "990.061eed6b.chunk.js.map": "/static/js/990.061eed6b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.222b2337.css",
-    "static/js/main.15aab7a4.js"
+    "static/css/main.72f6aa88.css",
+    "static/js/main.ccd7d6b8.js"
   ]
 }
