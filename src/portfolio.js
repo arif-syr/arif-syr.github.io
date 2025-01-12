@@ -26,7 +26,7 @@ const greeting = {
     "A driven Software Engineer with expertise in software applications, cloud solutions, and AI-driven tools. Proficient in Python, Java, and MLLMs/LLMs, with experience designing LiDAR-based algorithms, fine-tuning LLMs, and deploying scalable cloud solutions on AWS. Passionate about solving complex problems and leveraging modern technologies to create impactful solutions."
   ),
   resumeLink:
-    "https://github.com/arif-syr/resume_repository/blob/master/Arif-Syraj-resume.pdf", // Set to empty to hide the button
+    "https://github.com/arif-syr/resume_repository/blob/master/Arif-Syraj-resume-AWS.pdf", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
