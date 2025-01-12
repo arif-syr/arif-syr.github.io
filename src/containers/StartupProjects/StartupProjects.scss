@@ -101,6 +101,8 @@
   cursor: pointer;
   background-color: $lightBackground2;
   transition: all 0.3s ease;
+  border: 1px solid $lightBorder1;
+  border-radius: 10px;
 }
 
 .collapsible-header h5 {
@@ -145,12 +147,19 @@
 }
 
 .skills-list {
-  list-style-type: circle;
+  list-style-type: none; /* Remove bullet points */
+  // padding: 0;
   margin-left: 20px;
+  display: flex; /* Use flexbox to align items horizontally */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  gap: 0.5rem; /* Add space between skills */
 }
 
 .skill-item {
   color: $cardSubtitle;
+  background: $lightBackground3; /* Optional: Add a background color */
+  padding: 0.25rem 0.5rem; /* Optional: Add padding for spacing */
+  border-radius: 5px; /* Optional: Rounded corners for skills */
 }
 
 @media (max-width: 768px) {
