@@ -1,10 +1,13 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
+  const {isDark} = useContext(StyleContext);
+  const [openIndex, setOpenIndex] = useState(null);
+
   function openUrlInNewTab(url) {
     if (!url) {
       return;
@@ -13,10 +16,14 @@ export default function StartupProject() {
     win.focus();
   }
 
-  const {isDark} = useContext(StyleContext);
+  const toggleCollapse = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   if (!bigProjects.display) {
     return null;
   }
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
@@ -33,31 +40,45 @@ export default function StartupProject() {
           </p>
 
           <div className="projects-container">
-            {bigProjects.projects.map((project, i) => {
-              return (
+            {bigProjects.projects.map((project, index) => (
+              <div key={index} className="collapsible-container">
+                {/* Collapsible Header */}
                 <div
-                  key={i}
                   className={
                     isDark
-                      ? "dark-mode project-card project-card-dark"
-                      : "project-card project-card-light"
+                      ? "dark-mode collapsible-header"
+                      : "collapsible-header"
                   }
+                  onClick={() => toggleCollapse(index)}
                 >
-                  {project.image ? (
-                    <div className="project-image">
-                      <img
-                        src={project.image}
-                        alt={project.projectName}
-                        className="card-image"
-                      ></img>
-                    </div>
-                  ) : null}
-                  <div className="project-detail">
-                    <h5
-                      className={isDark ? "dark-mode card-title" : "card-title"}
-                    >
-                      {project.projectName}
-                    </h5>
+                  <h5
+                    className={isDark ? "dark-mode card-title" : "card-title"}
+                  >
+                    {project.projectName || `Project ${index + 1}`}
+                  </h5>
+                  <span className="collapsible-icon">
+                    {openIndex === index ? "-" : "+"}
+                  </span>
+                </div>
+
+                {/* Collapsible Content */}
+                {openIndex === index && (
+                  <div
+                    className={
+                      isDark
+                        ? "dark-mode collapsible-content"
+                        : "collapsible-content"
+                    }
+                  >
+                    {project.image && (
+                      <div className="project-image">
+                        <img
+                          src={project.image}
+                          alt={project.projectName}
+                          className="card-image"
+                        />
+                      </div>
+                    )}
                     <p
                       className={
                         isDark ? "dark-mode card-subtitle" : "card-subtitle"
@@ -65,30 +86,31 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
-                    {project.footerLink ? (
+                    {project.footerLink && (
                       <div className="project-card-footer">
-                        {project.footerLink.map((link, i) => {
-                          return (
-                            <span
-                              key={i}
-                              className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
-                              }
-                              onClick={() => openUrlInNewTab(link.url)}
-                            >
-                              {link.name}
-                            </span>
-                          );
-                        })}
+                        {project.footerLink.map((link, i) => (
+                          <span
+                            key={i}
+                            className={
+                              isDark
+                                ? "dark-mode project-tag"
+                                : "project-tag"
+                            }
+                            onClick={() => openUrlInNewTab(link.url)}
+                          >
+                            {link.name}
+                          </span>
+                        ))}
                       </div>
-                    ) : null}
+                    )}
                   </div>
-                </div>
-              );
-            })}
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </Fade>
   );
+
 }
