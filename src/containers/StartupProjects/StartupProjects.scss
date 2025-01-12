@@ -129,8 +129,10 @@
 }
 
 .project-bullet-list {
-  list-style-type: disc;
-  margin-left: 20px;
+  list-style-type: none;
+  padding-left: 5; /* Remove default indentation */
+  // margin-left: 0; /* Remove margin */
+  // margin-left: 20px;
   margin-top: 10px;
   color: $cardSubtitle;
 }
@@ -149,7 +151,7 @@
 .skills-list {
   list-style-type: none; /* Remove bullet points */
   // padding: 0;
-  margin-left: 20px;
+  margin-left: 0px;
   display: flex; /* Use flexbox to align items horizontally */
   flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
   gap: 0.5rem; /* Add space between skills */
