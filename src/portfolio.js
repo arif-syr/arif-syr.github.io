@@ -214,7 +214,7 @@ const bigProjects = {
         "Created a custom finetuning script and explored parameters to prevent overfitting and minimize GPU loads.",
         "Resulted in a model that can identify visually manipulated bar charts 90% of the time."
       ],
-      skills: ["Python", "Hugging Face", "PyTorch", "LoRA", "AI/ML"],
+      skills: ["Python", "Hugging Face", "PyTorch", "Tensorflow", "LoRA", "Multimodal LLMs", "Finetuning LLMs", "Dataset Creation", "LLM Performance Evaluation", "Hyperparameter Testing", "Cloud-based AI training", "AI/ML", "Prompt Engineering"],
       // footerLink: [
       //   { name: "View Details", url: "link_to_project_details_or_demo" }
       // ]
@@ -228,6 +228,7 @@ const bigProjects = {
         "Set up TLS encryption using ACM and Route 53 for domain management and HTTPS-encrypted communication.",
         "Deployed a containerized application orchestrated with ECS."
       ],
+      skills: ["AWS", "Cloud Computing", "Highly Available Applications", "Containerization", "Docker", "Shell Scripting"]
       // footerLink: [
       //   { name: "View Details", url: "link_to_project_details_or_demo" }
       // ]
@@ -239,6 +240,7 @@ const bigProjects = {
         "Implemented prompt engineering techniques to optimize syllabus section generation, significantly improving output quality and relevance.",
         "Developed a microservice using FastAPI that talks to large LLM's like ChatGPT for automated syllabus generation."
       ],
+      skills: ["GenAI", "LLM Crews", "Prompt Engineering", "Microservices"]
       // footerLink: [
       //   { name: "View Details", url: "link_to_project_details_or_demo" }
       // ]
@@ -250,7 +252,43 @@ const bigProjects = {
         "Scraped results are output to HTML files in a readable manner according to a list of user-specified constraints on commute time, rent, number of bedrooms, location, shared versus whole apartments, and more.",
         "Allows a user to easily see commute times to a specified location by foot, bike, and car. This data is queried from OpenStreetMap and can be used to sort listings according to travel time buckets by a chosen mode of transport."
       ],
+      skills: ["Python", "Scraping", "API Requests"]
       // footerLink: [
+      //   { name: "View Details", url: "link_to_project_details_or_demo" }
+      // ]
+    },
+    // {
+      //   projectName: "Reddit Product Scraper",
+      //   projectDesc: [
+        //     "Solo project to find specific products being re-sold on Reddit subreddits to get them at a discount.",
+        //     "Leveraged the Reddit API to scrape thousands of posts per minute to find relevant products and deliver them to the user in a readable fashion.",
+        //     "Personally saved $150 on $500 worth of purchases."
+        //   ],
+        //   skills: ["Python", "Scraping"]
+        //   // footerLink: [
+          //   //   { name: "View Details", url: "link_to_project_details_or_demo" }
+          //   // ]
+          // },
+    {
+      projectName: "Blackjack Agent",
+      projectDesc: [
+        "Developed an agent to play blackjack against humans using Q-learning as a reinforcement learning algorithm.",
+        "Simulated an environment to teach an agent to optimize decision making by balancing exploration and exploitation.",
+        "Used matplotlib and the learned policy of the agent to visualize agent policy."
+      ],
+      skills: ["Monte Carlo Simulations", "Q-learning", "AI/ML"]
+      // footerLink: [
+        //   { name: "View Details", url: "link_to_project_details_or_demo" }
+        // ]
+    },
+    {
+    projectName: "Fashion Image Classifier",
+    projectDesc: [
+      "Used keras and tensorflow to adapt ViT (Vision Transformer) to classify fashion articles by training on the fashion_mnist dataset.",
+      "Achieved a train accuracy of 86.88% after 4 epochs of training on 4000 images."
+    ],
+    skills: ["Keras", "Tensorflow"]
+    // footerLink: [
       //   { name: "View Details", url: "link_to_project_details_or_demo" }
       // ]
     },
@@ -260,38 +298,7 @@ const bigProjects = {
         "A wellness web-app with a task management system to help users track and quit addictions, track nutrition, sleep quality, and focus on work.",
         "Group project where we used Node.js with Express to set up the server, Passport.js and Google OAuth2 for authentication, and Mongoose to store user data."
       ],
-      // footerLink: [
-      //   { name: "View Details", url: "link_to_project_details_or_demo" }
-      // ]
-    },
-    {
-      projectName: "Reddit Product Scraper",
-      projectDesc: [
-        "Solo project to find specific products being re-sold on Reddit subreddits to get them at a discount.",
-        "Leveraged the Reddit API to scrape thousands of posts per minute to find relevant products and deliver them to the user in a readable fashion.",
-        "Personally saved $150 on $500 worth of purchases."
-      ],
-      // footerLink: [
-      //   { name: "View Details", url: "link_to_project_details_or_demo" }
-      // ]
-    },
-    {
-      projectName: "Blackjack Agent",
-      projectDesc: [
-        "Developed an agent to play blackjack against humans using Q-learning as a reinforcement learning algorithm.",
-        "Simulated an environment to teach an agent to optimize decision making by balancing exploration and exploitation.",
-        "Used matplotlib and the learned policy of the agent to visualize agent policy."
-      ],
-      // footerLink: [
-      //   { name: "View Details", url: "link_to_project_details_or_demo" }
-      // ]
-    },
-    {
-      projectName: "Fashion Image Classifier",
-      projectDesc: [
-        "Used keras and tensorflow to adapt ViT (Vision Transformer) to classify fashion articles by training on the fashion_mnist dataset.",
-        "Achieved a train accuracy of 86.88% after 4 epochs of training on 4000 images."
-      ],
+      skills: ["Node.js", "React", "OAuth", "RDBMS Design"]
       // footerLink: [
       //   { name: "View Details", url: "link_to_project_details_or_demo" }
       // ]
